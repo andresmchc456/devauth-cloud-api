@@ -25,9 +25,6 @@ bash
 npx prisma studio
 
 
-
-
-
 |Comando	|¿Para qué sirve?|
 |-|-|
 |npx prisma studio|Ver y editar visualmente los datos de la base de datos.|
@@ -35,4 +32,6 @@ npx prisma studio
 |npm run dev|	Iniciar tu servidor Backend Express en desarrollo.|
 
 
+npx prisma migrate dev --name init_users // Aplica los cambios a la base de datos y guarda un historial de migraciones
 
+npx prisma db push //Sincroniza los cambios directamente con la base de datos sin guardar historial de migraciones (útil para pruebas muy rápidas).
