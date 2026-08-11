@@ -35,3 +35,9 @@ npx prisma studio
 npx prisma migrate dev --name init_users // Aplica los cambios a la base de datos y guarda un historial de migraciones
 
 npx prisma db push //Sincroniza los cambios directamente con la base de datos sin guardar historial de migraciones (útil para pruebas muy rápidas).
+
+
+# comando para crear un archivo TS
+touch src/carpetas/archivos.ts
+ejemplo
+touch src/middlewares/auth.middleware.ts
