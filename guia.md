@@ -41,3 +41,12 @@ npx prisma db push //Sincroniza los cambios directamente con la base de datos si
 touch src/carpetas/archivos.ts
 ejemplo
 touch src/middlewares/auth.middleware.ts
+
+
+# Crear carpetas de controladores y rutas
+mkdir -p carpeta/subcarpeta1/subcarpeta2/
+ejemplo
+mkdir -p src/controllers src/routes
+
+# comando para correr el proyecto
+npm run dev
