@@ -19,7 +19,7 @@ export class AuthController {
             if (error.name === 'ZodError') {
                 return res
                     .status(400)
-                    .json({ error: 'Errores de validación', details: error.errors });
+                    .json({ error: 'Errores de validación', details: error.issues || error.errors });
             }
             return res
                 .status(400)
@@ -41,7 +41,7 @@ export class AuthController {
             if (error.name === 'ZodError') {
                 return res
                     .status(400)
-                    .json({ error: 'Errores de validación', details: error.errors });
+                    .json({ error: 'Errores de validación', details: error.issues || error.errors });
             }
             return res
                 .status(400)
